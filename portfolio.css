@@ -1,0 +1,270 @@
+body{
+	font-size: 16px;
+	font-family: 'Jura', sans-serif;
+	font-weight: 300;
+}
+
+*, *::before, *::after{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+img{
+	max-width: 100%;
+}
+
+/*--layout--*/											 
+
+	body{
+		display: grid;
+		grid-template-areas: 
+			"fejlec"
+			"kontent"
+			"lablec"
+		;
+		grid-template-columns: 1fr;
+		grid-template-rows: 5rem 1fr 8rem;
+		min-height: 100vh;
+		position: relative;
+	}
+
+	header{
+		grid-area: fejlec;
+		/*background-color:#ffcdb2;*/
+		
+	}
+
+	main{
+		grid-area: kontent;
+		/*background-color:#ffb4a2;*/
+		
+		
+	}
+	footer{
+		grid-area: lablec;
+		/*background-color:grey;*/
+		
+
+	}
+	.menuclass{
+		grid-area: menu;
+		/*background-color:#b5838d;*/
+		
+	}
+
+	.telefon{
+		display: grid;
+		grid-template-columns:1fr;
+		grid-template-areas: 
+			"fejlec"
+			"kontent"
+			"lablec"
+		;		
+	}
+
+	@media only screen and (min-width: 480px){
+		.telefon{
+			display: grid;
+			grid-template-columns: 1fr;
+			/*min-content, max-content*/
+			grid-template-areas: 
+				"fejlec"
+				"kontent"
+				"lablec"
+			;
+	}
+
+/*--layout end--*/
+
+/*--azonos_header--*/
+	
+	.headerclass{
+  		overflow: auto;
+  		background-color: #000000;
+  		position: sticky;
+  		top: 0;
+	}
+
+	.header_bal{
+		color: #ffffff;
+		margin-top: 30px;
+		margin-left: 30px;
+		font-size: 18px;
+		font-family: 'Julius Sans One', sans-serif;
+		display: inline-block;
+		min-width: max-content;
+		
+	}
+
+	.header_jobb {
+		float: right;
+		display: block; 
+		text-align: left;
+    	margin-top: 13px;
+  		margin-right: 30px;
+
+
+	}
+
+	.header_jobb img{
+		
+		max-height: 3rem;
+
+	}
+
+	.header_jobb {
+    	border: 0px solid #ffffff;
+    }
+
+    
+
+/*--azonos_header_end--*/
+
+/*--main--*/
+
+	.mainclass{
+		background-image: url(keleti_mezmadar.jpg);
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		position: relative;
+		height: 1700px;
+	}
+
+	.navigacio{
+  		display: inline block;
+  		color: black;
+  		position: sticky;
+  		top: 0;
+  	}
+
+  	.navigacio:hover {
+  		color: #ffffff;
+	}
+
+	.aktiv {
+  		font-weight: bold;
+  		color: black;
+  		float: left;
+  		display: inline block;
+  		text-align: center;
+  		padding: 14px 16px;
+  		font-size: 25px;
+  		font-family: 'Righteous', cursive;
+  		margin-top: 23px;
+  		margin-left: 25px 	
+  	}
+  	
+  	.passziv01{
+  		float: left;
+  		display: inline block;
+  		color: black;
+  		text-align: center;
+  		padding: 14px 16px;
+  		font-size: 25px;
+  		font-family: 'Righteous', cursive;
+  		margin-top: 23px;
+  		margin-left: 30px 	
+
+  	}
+
+  	.passziv02{
+  		float: left;
+  		display: inline block;
+  		color: black;
+  		text-align: center;
+  		padding: 14px 16px;
+  		font-size: 25px;
+  		font-family: 'Righteous', cursive;
+  		margin-top: 23px;
+  		margin-left: 50px	
+
+
+  	}
+
+  	.passziv03{
+  		float: left;
+  		display: inline block;
+  		color: black;
+  		text-align: center;
+  		padding: 14px 16px;
+  		font-size: 25px;
+  		font-family: 'Righteous', cursive;
+  		margin-top: 23px;
+  		margin-left: 50px	
+
+  	}
+
+ 	 p span {
+ 		color: #ffffff;
+ 		font-size: 25px;
+ 		display: inline-block;
+ 		margin-top: 120px;
+ 		margin-left: 1050px; 
+ 		margin-right: 0px;
+ 		padding-bottom: 15px;
+ 		padding-right: 110px;
+ 		border-bottom: 5px solid black;
+
+ 	}
+
+ 	a span {
+ 		color: #ffffff;
+ 		font-size: 60px;
+ 		display: inline-block;
+ 		margin-top: 180px;
+ 		margin-left: 0px; 
+ 		margin-right: 1050px;
+ 		padding-bottom: 15px;
+ 		padding-left: 100px;
+ 		border-bottom: 5px solid black;
+ 		
+	}
+
+	.mezmadar {
+		color: #ffffff;
+		font-size: 15px;
+		margin-left: 0px;
+		margin-top: 600px;
+		margin-right: 1150px;
+		font-weight: bold;
+		padding-bottom: 8px;
+		padding-left: 150px;
+ 		border-bottom: 3px solid black;
+
+
+
+	}
+
+
+/*--main end--*/
+
+/*--footer--*/
+
+	.footerclass{
+		background-color: black;
+		color: white;
+	}
+
+	.footer01{
+		font-size: 13px;
+		font-family: 'Julius Sans One', sans-serif;
+		display: inline-block;
+		min-width: max-content;
+		margin-left: 30px;
+		margin-top: 50px; 
+	}
+
+	.footer02{
+		font-size: 13px;
+		float:right;
+		margin-right: 35px;
+		margin-top: 30px;
+		font-family: 'Julius Sans One', sans-serif;
+		display: inline-block;
+		min-width: max-content;
+	}
+
+/*--footer end--*/
+
