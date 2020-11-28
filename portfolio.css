@@ -24,7 +24,7 @@ img{
 			"lablec"
 		;
 		grid-template-columns: 1fr;
-		grid-template-rows: 5rem 1fr 8rem;
+		grid-template-rows: max-content 1fr max-content;
 		min-height: 100vh;
 		position: relative;
 	}
@@ -73,6 +73,7 @@ img{
 				"kontent"
 				"lablec"
 			;
+		}
 	}
 
 /*--layout end--*/
@@ -89,6 +90,7 @@ img{
 	.header_bal{
 		color: #ffffff;
 		margin-top: 30px;
+		margin-bottom: 30px;
 		margin-left: 30px;
 		font-size: 18px;
 		font-family: 'Julius Sans One', sans-serif;
@@ -108,7 +110,6 @@ img{
 	}
 
 	.header_jobb img{
-		
 		max-height: 3rem;
 
 	}
@@ -123,13 +124,25 @@ img{
 
 /*--main--*/
 
-	.mainclass{
+	.mainclass01{
 		background-image: url(keleti_mezmadar.jpg);
 		background-position: center;
 		background-repeat: no-repeat;
 		background-size: cover;
 		position: relative;
 		height: 1700px;
+	}
+
+	.mainclass02{
+		background-image: url(white_background.png);
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		position: relative;
+		height: 690px;
+		
+
+
 	}
 
 	.navigacio{
@@ -139,12 +152,32 @@ img{
   		top: 0;
   	}
 
-  	.navigacio:hover {
-  		color: #ffffff;
+  	.aktiv{
+  		font-weight: bold;
+  	}
+
+  	.passziv01:hover{
+		color: #ffffff;
+		text-shadow: -1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.5), 0px 0px 5px #000000;
 	}
 
-	.aktiv {
-  		font-weight: bold;
+	.passziv02:hover{
+		color: #ffffff;
+		text-shadow: -1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.5), 0px 0px 5px #000000;
+	}
+
+	.passziv03:hover{
+		color: #ffffff;
+		text-shadow: -1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.5), 0px 0px 5px #000000;
+	}
+	
+	.passziv04:hover{
+		color: #ffffff;
+		text-shadow: -1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.5), 0px 0px 5px #000000;
+	}
+
+
+	.passziv01 {
   		color: black;
   		float: left;
   		display: inline block;
@@ -156,7 +189,7 @@ img{
   		margin-left: 25px 	
   	}
   	
-  	.passziv01{
+  	.passziv02{
   		float: left;
   		display: inline block;
   		color: black;
@@ -169,7 +202,7 @@ img{
 
   	}
 
-  	.passziv02{
+  	.passziv03{
   		float: left;
   		display: inline block;
   		color: black;
@@ -183,7 +216,7 @@ img{
 
   	}
 
-  	.passziv03{
+  	.passziv04{
   		float: left;
   		display: inline block;
   		color: black;
@@ -237,10 +270,30 @@ img{
 
 	}
 
+	.kapcsolatmain img{
+		max-width: 50rem;
+		max-height: 35rem;
+		margin-left: 900px;
+		margin-top: 0px; 
+	}
+
+	.kapcsolatszoveg{
+		margin-top: 200px;
+		text-align: center;
+		font-size: 20px;
+		color: black;
+  		float: left;
+  		display: inline block;
+  		text-align: center;
+  		padding: 14px 16px;
+  		margin-top: 23px;
+  		margin-left: 25px 	
+	}
+
 
 /*--main end--*/
 
-/*--footer--*/
+/*--azonos footer--*/
 
 	.footerclass{
 		background-color: black;
@@ -261,10 +314,11 @@ img{
 		float:right;
 		margin-right: 35px;
 		margin-top: 30px;
+		margin-bottom: 30px;
 		font-family: 'Julius Sans One', sans-serif;
 		display: inline-block;
 		min-width: max-content;
 	}
 
-/*--footer end--*/
+/*--azonos footer end--*/
 
