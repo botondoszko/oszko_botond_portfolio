@@ -14,6 +14,10 @@ img{
 	max-width: 100%;
 }
 
+a:link {​​​​
+  text-decoration: none;
+}​​​​
+
 /*--layout--*/											 
 
 	body{
@@ -31,49 +35,26 @@ img{
 
 	header{
 		grid-area: fejlec;
-		/*background-color:#ffcdb2;*/
+		
 		
 	}
 
 	main{
 		grid-area: kontent;
-		/*background-color:#ffb4a2;*/
+		
 		
 		
 	}
 	footer{
 		grid-area: lablec;
-		/*background-color:grey;*/
+		
 		
 
 	}
 	.menuclass{
 		grid-area: menu;
-		/*background-color:#b5838d;*/
 		
-	}
-
-	.telefon{
-		display: grid;
-		grid-template-columns:1fr;
-		grid-template-areas: 
-			"fejlec"
-			"kontent"
-			"lablec"
-		;		
-	}
-
-	@media only screen and (min-width: 480px){
-		.telefon{
-			display: grid;
-			grid-template-columns: 1fr;
-			/*min-content, max-content*/
-			grid-template-areas: 
-				"fejlec"
-				"kontent"
-				"lablec"
-			;
-		}
+		
 	}
 
 /*--layout end--*/
@@ -118,183 +99,200 @@ img{
     	border: 0px solid #ffffff;
     }
 
+    @media only screen and (max-width: 600px){
+	    .header_jobb {
+			display: block; 
+	    	margin: 1em;
+	    	text-align: center;
+		}
+
+		.header_bal{
+			color: #ffffff;
+			margin: 1em;
+			font-size: 18px;
+			font-family: 'Julius Sans One', sans-serif;
+			display: block;
+			min-width: max-content;
+		}
+		.headerclass{
+	  		overflow: auto;
+	  		background-color: #000000;
+	  		position: sticky;
+	  		top: 0;
+	  		text-align: center;
+		}
+    }
+
     
 
 /*--azonos_header_end--*/
 
 /*--main--*/
 
+
+
 	.mainclass01{
 		background-image: url(keleti_mezmadar.jpg);
 		background-position: center;
 		background-repeat: no-repeat;
 		background-size: cover;
-		position: relative;
-		height: 1700px;
+		position: center;
+		height: 2000px;
+		overflow: hidden;
 	}
 
 	.mainclass02{
-		background-image: url(white_background.png);
 		background-position: center;
 		background-repeat: no-repeat;
 		background-size: cover;
-		position: relative;
-		height: 690px;
+		background-color: white;
+		width: 100%;
+		overflow: hidden;
 	}
 
 	.mainclass03{
-		background-image: url(white_background.png);
+		background-color: white;
 		background-position: center;
 		background-repeat: no-repeat;
-		background-size: cover;
-		position: relative;
-		height: 1200px;
+		background-size: cover
+		width: 100%;
+		overflow: hidden;
 		
-
-
 	}
 
 	.navigacio{
-  		display: inline-block;
   		color: black;
-  		position: sticky;
-  		top: 0;
+  		position: fixed;
+  		top: 0
+  		text-align: left;
+  		text-decoration: none;
+  		
+
   	}
 
   	.aktiv{
   		font-weight: bold;
   	}
 
-  	.passziv01:hover{
+  	.passziv:hover{
 		color: #ffffff;
 		transition: .4s;
 		text-shadow: -1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.5), 0px 0px 5px #000000;
 	}
 
-	.passziv02:hover{
-		color: #ffffff;
-		transition: .4s;
-		text-shadow: -1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.5), 0px 0px 5px #000000;
-	}
-
-	.passziv03:hover{
-		color: #ffffff;
-		transition: .4s;
-		text-shadow: -1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.5), 0px 0px 5px #000000;
-	}
 	
-	.passziv04:hover{
-		color: #ffffff;
-		transition: .4s;
-		text-shadow: -1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.5), 0px 0px 5px #000000;
-	}
-
-
-	.passziv01 {
-  		color: black;
-  		float: left;
+	.passziv{
   		display: inline-block;
-  		text-align: center;
-  		padding: 14px 16px;
-  		font-size: 25px;
-  		font-family: 'Righteous', cursive;
-  		margin-top: 23px;
-  		margin-left: 25px 	
-  	}
-  	
-  	.passziv02{
-  		float: left;
-  		display: inline-block;
+  		text-decoration: none;
   		color: black;
   		text-align: center;
   		padding: 14px 16px;
-  		font-size: 25px;
+  		font-size: 1.8em;
   		font-family: 'Righteous', cursive;
-  		margin-top: 23px;
-  		margin-left: 30px 	
+  		margin: 1em 0 0 2em;	
 
   	}
 
-  	.passziv03{
-  		float: left;
-  		display: inline-block;
-  		color: black;
-  		text-align: center;
-  		padding: 14px 16px;
-  		font-size: 25px;
-  		font-family: 'Righteous', cursive;
-  		margin-top: 23px;
-  		margin-left: 50px	
+  	@media only screen and (max-width: 1045px){
+  		.navigacio{
+	  		color: black;
+	  		position: sticky;
+	  		top: 0
+	  		text-decoration: none;
+	  		text-align: center;  
+	  	}
+	  	.passziv{
+	  		display: block;
+	  		color: black;
+	  		text-align: center;
+	  		padding: 14px 16px;
+	  		font-size: 1.8em;
+	  		font-family: 'Righteous', cursive;
+	  		margin: 1em;	
+		}
+
 
 
   	}
 
-  	.passziv04{
-  		float: left;
-  		display: inline-block;
-  		color: black;
-  		text-align: center;
-  		padding: 14px 16px;
-  		font-size: 25px;
-  		font-family: 'Righteous', cursive;
-  		margin-top: 23px;
-  		margin-left: 50px	
-
-  	}
-
- 	 p span {
+ 	.intoszoveg {
  		color: #ffffff;
  		font-size: 25px;
- 		display: inline-block;
- 		margin-top: 120px;
- 		margin-left: 1050px; 
- 		margin-right: 0px;
+ 		float: right;
+ 		margin-top: 410px;	 
+ 		width: 30%;
  		padding-bottom: 15px;
  		padding-right: 110px;
  		border-bottom: 5px solid black;
 
  	}
 
- 	a span {
- 		color: #ffffff;
- 		font-size: 60px;
- 		display: inline-block;
- 		margin-top: 180px;
- 		margin-left: 0px; 
- 		margin-right: 1050px;
- 		padding-bottom: 15px;
- 		padding-left: 100px;
- 		border-bottom: 5px solid black;
- 		
+ 	.mezmadar {
+		color: white;
+		display: inline-block;
+		margin-top: 96.5rem;
+		padding-left: 8rem;
+		font-size: 2rem;
+		border-bottom: 0.2rem solid black;
+
+
 	}
 
-	.mezmadar {
-		color: #ffffff;
-		font-size: 15px;
-		margin-left: 0px;
-		margin-top: 600px;
-		margin-right: 1150px;
-		font-weight: bold;
-		padding-bottom: 8px;
-		padding-left: 150px;
- 		border-bottom: 3px solid black;
+ 	@media only screen and (max-width: 1045px){
+ 		.intoszoveg {
+	 		color: #ffffff;
+	 		font-size: 25px;
+	 		float: unset;
+	 		margin-top: 120px; 
+	 		width: 100%;
+	 		padding-bottom: 15px;
+	 		margin-left: 2em;
+	 		border-bottom: 5px solid black;
+	 	}
 
 
+		.mezmadar {
+		color: white;
+		display: inline-block;
+		margin-top: 55.5rem;
+		padding-left: 8rem;
+		font-size: 2rem;
+		border-bottom: 0.2rem solid black;
+		}
+	}
 
+ 	.intocim {
+ 		color: white;
+		display: inline-block;
+		margin-top: 6.5rem;
+		margin-right: 140rem;
+		padding-left: 8rem;
+		font-size: 3rem;
+		border-bottom: 0.3rem solid black;
+ 		
 	}
 
 	.kapcsolatmain img {
 		display: inline-block;
 		max-width: 50rem;
-		max-height: 37rem;
-		margin-right: 30px;
-		margin-top: -40px; 
+		max-height: 34.5rem;
+		margin: 6rem;
 		float: right;
 	}
 
-	.kapcsolatcim{
+	@media only screen and (max-width: 1560px){
+		.kapcsolatmain img {
+			display: block;
+			max-width: 50rem;
+			max-height: 34.5rem;
+			margin: 6rem auto;
+			float: unset;
+		}
+	}
+
+	.altalanoscim{
 		display: inline-block;
-		margin-top: 4rem;
+		margin-top: 6.5rem;
 		margin-right: 20rem;
 		padding-left: 8rem;
 		font-size: 3rem;
@@ -311,16 +309,6 @@ img{
   		text-align: left;
   		padding: 14px 16px;
   		margin-left: 200px; 	
-	}
-
-	.munkaimcim{
-		display: inline-block;
-		margin-top: 4rem;
-		margin-right: 20rem;
-		padding-left: 8rem;
-		font-size: 3rem;
-		border-bottom: 0.2rem solid black;
-
 	}
 
 	.kepek_flex_racs {
@@ -362,6 +350,37 @@ img{
 
 	}
 
+	.kapcsolatszoveg { 
+		margin-top: 100px;
+		font-size: 36px;
+		color: black;
+  		float: left;
+  		display: inline-block;
+  		text-align: left;
+  		padding: 14px 16px;
+  		margin-left: 200px; 	
+	}
+
+	.weboldalszoveg01 { 
+		margin-top: 1.2rem;
+		font-size: 1.7rem;
+		color: black;
+  		display: inline-block;
+  		text-align: center;
+  		padding: 3rem;
+  		 	
+	}
+
+	.weboldalszoveg02 { 
+		margin-bottom: 1.2rem;
+		font-size: 1.7rem;
+		color: black;
+  		display: inline-block;
+  		text-align: center;
+  		padding: 3rem;
+  		 	
+	}
+
 
 /*--main end--*/
 
@@ -370,26 +389,27 @@ img{
 	.footerclass{
 		background-color: black;
 		color: white;
+		z-index: 5;
+		display: inline-block;
+		width: 100%;
+
+
 	}
 
 	.footer01{
 		font-size: 13px;
 		font-family: 'Julius Sans One', sans-serif;
-		display: inline-block;
 		min-width: max-content;
-		margin-left: 30px;
-		margin-top: 50px; 
+		padding: 4em;
+		float: left; 
 	}
 
 	.footer02{
 		font-size: 13px;
-		float:right;
-		margin-right: 35px;
-		margin-top: 30px;
-		margin-bottom: 30px;
+		padding: 2em;
 		font-family: 'Julius Sans One', sans-serif;
-		display: inline-block;
 		min-width: max-content;
+		float: right;
 	}
 
 /*--azonos footer end--*/
